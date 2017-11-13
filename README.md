@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
+It includes the demos of the book [Angular](https://www.amazon.de/Angular-Praxisbuch-Grundlagen-Best-Practices/dp/3960090269) written by Manfred Steyer & Daniel Schwab
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
