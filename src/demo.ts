@@ -1,21 +1,36 @@
+import { FlightManager } from './flight-manager';
+import { Flight } from './flight';
 
-let i: number = parseInt("42");
-let d: number = parseFloat("0.815");
+let flights: Flight[] = [
+    {
+        id: 17,
+        from: 'Graz',
+        to: 'München',
+        date: '2017-11-17'
+    },
+    {
+        id: 18,
+        from: 'Graz',
+        to: 'München',
+        date: '2017-11-17'
+    },
+    {
+        id: 19,
+        from: 'Graz',
+        to: 'Mallorca',
+        date: '2017-11-17'
+    },
+    {
+        id: 20,
+        from: 'Graz',
+        to: 'München',
+        date: '2017-11-17'
+    }
+];
 
-if (isNaN('ein String')){
-    console.debug('Ein String ist keine Zahl!');
-}
+let fm = new FlightManager (flights);
+let result1 = fm.search('Graz', 'München');
 
-let name1: string = 'Max';
-let name2: string = "Max";
-let name3: string = `
-${name2} Mustermann` ;
-
-let name4 = name2 + ' Muster';
-console.debug(name3);
-console.debug(name4);
-
-let firstName = null;
-if (!firstName) {
-    console.debug('firstName is falsy');
+for (let f of result1) {
+    console.debug('flight', f);
 }
