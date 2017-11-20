@@ -70,3 +70,10 @@ console.debug('isPilot ', isPilot);
 console.debug('isPassenger ', isPassenger);
 console.debug('Passengerstatus ', status);
 
+// Nutzung von Getter und Setter
+
+let nextFlight = new ScheduledFlight();
+nextFlight.date = '2018-12-24';
+console.debug('unix-date: ', nextFlight.unixDate);
+nextFlight.unixDate = 1000;
+console.debug('unix-date: ', nextFlight.date);
