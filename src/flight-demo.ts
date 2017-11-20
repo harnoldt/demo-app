@@ -1,5 +1,5 @@
 import { Flight, ScheduledFlight, CharterFlight } from './flight';
-
+// tslint:disable:no-console
 // Austauschen von Objekten
 
 console.debug('--- Austauschen von Objekten ---');
