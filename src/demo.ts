@@ -1,6 +1,7 @@
 import { FlightManager } from './flight-manager';
 import { Flight } from './flight';
 
+// tslint:disable:no-console
 let flights: Flight[] = [
     {
         id: 17,
