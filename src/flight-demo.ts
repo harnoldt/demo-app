@@ -1,3 +1,4 @@
+import { Status } from 'tslint/lib/runner';
 import { Flight, ScheduledFlight, CharterFlight } from './flight';
 
 // Austauschen von Objekten
@@ -51,7 +52,11 @@ class Pilot extends Person {
 let person1: Person = new Passenger();
 person1.firstName = 'Max';
 person1.lastName = 'Muster';
-let status = person1.pass
+// let status = person1.passengerStatus; // Error person1 ist mit Person typisiert!!!
+
+let person1AsPassenger = person1 as Passenger; // Type Assertion
+// let person1AsPassenger = <Passenger>person1; // alternative Schreibweise
+let status = person1AsPassenger.passengerStatus;
 
 let person2: Person = new Pilot();
 person2.firstName = 'Jens';
@@ -64,4 +69,5 @@ let isPilot = person1 instanceof Pilot; // false
 console.debug('isPerson ', isPerson);
 console.debug('isPilot ', isPilot);
 console.debug('isPassenger ', isPassenger);
+console.debug('Passengerstatus ', status);
 
