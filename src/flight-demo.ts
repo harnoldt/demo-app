@@ -1,4 +1,3 @@
-import { Status } from 'tslint/lib/runner';
 import { Flight, ScheduledFlight, CharterFlight } from './flight';
 
 // Austauschen von Objekten
